@@ -1,0 +1,51 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Hello App Engine</title>
+</head>
+
+<body>
+	<h1>Hello App Engine!</h1>
+
+	<table>
+		<tr>
+			<td colspan="2" style="font-weight: bold;">Available Servlets:</td>
+		</tr>
+
+		<tr>
+			<td><a
+				href='/_ah/api/debugendpoint/v1/pinnoauth?message=Hola+Mundo'>Do
+					a ping</a></td>
+		</tr>
+
+		<tr>
+			<td><a href='/_ah/api/debugendpoint/v1/insert?message=ping'>Insert
+					ping</a></td>
+		</tr>
+
+
+		<tr>
+			<td>
+			<form action="/_ah/api/debugendpoint/v1/update" method="post">
+			<input type="text" id="key" name="key" placeholder="Key" />
+			<input type="text" id="data" name="data" placeholder="Data" />			
+			<input type="submit" value="Send" />
+			</form>
+			
+		</tr>
+
+		<tr>
+			<td><a
+				href='/_ah/api/debugendpoint/v1/findAll?messages=findAll'>Find All Ping</a></td>
+		</tr>
+
+	</table>
+	
+	
+	
+	
+</body>
+</html>
